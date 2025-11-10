@@ -10,9 +10,8 @@
       }
 
       .thumbnail {
-        width: 300px;
+        width: 100%;
         border-radius: 8px;
-        display: block;
       }
 
       .profile-picture {
@@ -26,24 +25,17 @@
         display: block;
       }
 
-      .video-preview {
-        width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 50px;
+      .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
       }
 
-      .channel-picture {
-        display: inline-block;
-        width: 50px;
-        vertical-align: top;
-        background-color: gray;
-      }
 
-      .video-info {
-        display: inline-block;
-        width: 50px;
-        background-color: gray;
+      .video-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
       }
 
       .video-title {
@@ -81,13 +73,15 @@
   <body>
     <input class="search-bar" type="text" placeholder="Search">
 
+    <div class="video-grid">
+
     <div class="video-preview">
 
       <div class="thumbnail-row">
         <img class="thumbnail" src="/thumbnails/thumbnail.webp">
       </div>
 
-      <div class="">
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channel-pictures/channel-1.jpg">
         </div>
@@ -114,7 +108,7 @@
         <img class="thumbnail" src="/thumbnails/thumbnail-2.png">
       </div>
 
-      <div class="">
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channel-pictures/channel-1.jpg">
         </div>
@@ -133,6 +127,116 @@
         </div>
       </div>
 
+    </div>
+
+    <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="/thumbnails/thumbnail-3.jpg">
+      </div>
+
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-pictures/channel-1.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Talking tech & AI with Google CEO Sundar Pichai!
+          </p>
+
+          <p class="video-author">
+            Marques Brownlee &#10003;
+          </p>
+
+          <p class="video-stats">
+            3.4M Views &#183; 6 months ago
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="/thumbnails/thumbnail-4.png">
+      </div>
+
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-pictures/channel-1.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Try not to laugh challenge 
+          </p>
+
+          <p class="video-author">
+            Markiplier
+          </p>
+
+          <p class="video-stats">
+            19M Views &#183; 4 years ago
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="/thumbnails/thumbnail-5.png">
+      </div>
+
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-pictures/channel-1.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Talking tech & AI with Google CEO Sundar Pichai!
+          </p>
+
+          <p class="video-author">
+            Marques Brownlee &#10003;
+          </p>
+
+          <p class="video-stats">
+            3.4M Views &#183; 6 months ago
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="/thumbnails/thumbnail-6.jpg">
+      </div>
+
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-pictures/channel-1.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Try not to laugh challenge 
+          </p>
+
+          <p class="video-author">
+            Markiplier
+          </p>
+
+          <p class="video-stats">
+            19M Views &#183; 4 years ago
+          </p>
+        </div>
+      </div>
+
+    </div>
+    
     </div>
 
   </body>
