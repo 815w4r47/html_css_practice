@@ -30,6 +30,7 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: gray;
+  z-index: 100;
 }
 
 .left-section {
@@ -99,6 +100,27 @@
 .bell-icon {
   height: 22px;
   margin-top: 6px;
+}
+
+.bell-icon-container {
+  position: relative;
+}
+
+.bell-count {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  right: 0;
+  background-color: red;
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  font-weight: 500;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
 }
 
 .profile-picture {
