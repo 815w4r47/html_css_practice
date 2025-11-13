@@ -3,6 +3,35 @@
   left: 0;
   bottom: 0;
   top: 55px;
-  background-color: hotpink;
+  background-color: rgb(250, 246, 246);
   width: 72px;
+  z-index: 200;
+  padding-top: 5px;
+}
+
+.sidebar-link {
+  background-color: rgb(250, 246, 246);
+  height: 74px;
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: rgb(255, 255, 255);
+  /* transition: 500ms ease-in; */
+}
+
+.sidebar-link img {
+  color: black;
+  margin-bottom: 4px;
+}
+
+.sidebar-link div {
+  font-family: Roboto, Arial;
+  font-size: 10px;
+  font-weight: 200;
 }
